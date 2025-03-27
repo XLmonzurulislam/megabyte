@@ -1,0 +1,31 @@
+<style>
+.test{
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px;
+    font-size: 50px;
+    margin-top: 200px;
+    margin-left:40%;
+    margin-top: 200px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.space{
+    height: 200px;
+    width: 100%;
+}
+</style>
+<div class="space"></div>
+<a class="test" id="test" target="_blank" href="tg://">Testing</a><br> <hr><br>
+
+<script>
+    document.getElementById("test").addEventListener("click", function(event) {
+    event.preventDefault(); // ডিফল্ট লিংক ওপেন বন্ধ করা
+
+    window.open(this.href, "_blank"); // নতুন ট্যাবে লিংক ওপেন
+
+    window.location.href = "https://example.com/new-page"; // মূল পেজের URL পরিবর্তন এবং রিলোড
+});
+</script>
